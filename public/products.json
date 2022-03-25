@@ -52,5 +52,23 @@
         "price": "$2,713.52",
         "img": "https://static.digit.in/product/thumb_176736_product_td_300.jpeg",
         "name": "SAMSUNG GALAXY S21 ULTRA"
+    },
+    {
+        "id": "623e0309566cf8610e089819",
+        "price": "$1,342.83",
+        "img": "https://static.digit.in/product/thumb_184271_product_td_300.jpeg",
+        "name": "MI 11 ULTRA"
+    },
+    {
+        "id": "623e0309c7958b149a90f944",
+        "price": "$3,304.51",
+        "img": "https://static.digit.in/product/thumb_179597_product_td_300.jpeg",
+        "name": "Xiaomi Redmi Note 10"
+    },
+    {
+        "id": "623e0309aae1bd71bf388d3c",
+        "price": "$3,538.09",
+        "img": "https://static.digit.in/product/thumb_184271_product_td_300.jpeg",
+        "name": "Xiaomi Mi 11 Ultra"
     }
 ]

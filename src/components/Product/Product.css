@@ -1,0 +1,20 @@
+.product img{
+    height: 286px;
+    width: 286px;
+}
+.product{
+    border: 5px outset greenyellow;
+    border-radius: 10px;
+    width: 300px;
+    height: 510px;
+}
+.product-name{
+    font-size: 25px;
+    font-family: Ink Free;
+    font-weight: 600;
+    text-align: center;
+}
+.product-price{
+    font-size: 20px;
+    text-align: center;
+}
