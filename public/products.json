@@ -1,0 +1,56 @@
+[
+    {
+        "id": "623de4d562c128f3bbda2f49",
+        "price": "$1,063.21",
+        "img": "https://static.digit.in/product/thumb_230463_product_td_300.jpeg",
+        "name": "SAMSUNG GALAXY S22 ULTRA"
+    },
+    {
+        "id": "623de4d57a1ef5645c02b03f",
+        "price": "$2,570.09",
+        "img": "https://static.digit.in/product/thumb_198189_product_td_300.jpeg",
+        "name": "IPHONE 13 PRO MAX"
+    },
+    {
+        "id": "623de4d51a37523ca236e706",
+        "price": "$3,717.37",
+        "img": "https://static.digit.in/product/thumb_184405_product_td_300.jpeg",
+        "name": "IQOO 7 LEGEND"
+    },
+    {
+        "id": "623de4d5711a91935228409f",
+        "price": "$3,774.17",
+        "img": "https://static.digit.in/product/thumb_180500_product_td_300.jpeg",
+        "name": "ASUS ROG PHONE 5 ULTIMATE"
+    },
+    {
+        "id": "623de4d544144dd8e6d9e662",
+        "price": "$2,281.81",
+        "img": "https://static.digit.in/product/thumb_191466_product_td_300.jpeg",
+        "name": "OPPO RENO 6 PRO"
+    },
+    {
+        "id": "623de4d5ebe1f66f01c20732",
+        "price": "$3,683.82",
+        "img": "https://static.digit.in/product/thumb_199372_product_td_300.jpeg",
+        "name": "VIVO X70 PRO+"
+    },
+    {
+        "id": "623de4d5f9c4e762855ef89a",
+        "price": "$2,508.45",
+        "img": "https://static.digit.in/product/thumb_194448_product_td_300.jpeg",
+        "name": "SAMSUNG GALAXY Z FOLD 3"
+    },
+    {
+        "id": "623de4d543feeeb050fe8e26",
+        "price": "$3,334.42",
+        "img": "https://static.digit.in/product/thumb_181624_product_td_300.jpeg",
+        "name": "ONEPLUS 9 PRO"
+    },
+    {
+        "id": "623de4d558465225dc8cda2a",
+        "price": "$2,713.52",
+        "img": "https://static.digit.in/product/thumb_176736_product_td_300.jpeg",
+        "name": "SAMSUNG GALAXY S21 ULTRA"
+    }
+]
