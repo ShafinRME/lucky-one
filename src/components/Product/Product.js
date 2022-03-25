@@ -8,6 +8,11 @@ const Product = ({ product }) => {
             <img src={img} alt="" />
             <p className='product-name'>{name}</p>
             <p className='product-price'>{price}</p>
+            <div>
+                <button className='btn-cart'>
+                    ADD TO CART
+                </button>
+            </div>
         </div>
     );
 };
