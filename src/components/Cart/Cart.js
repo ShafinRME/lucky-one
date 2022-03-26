@@ -1,7 +1,7 @@
 import React from 'react';
 import './Cart.css'
 
-const Cart = ({ cart, handleClearToCart, handleChooseOne }) => {
+const Cart = ({ cart, handleClearToCart, handleChooseOne, choose }) => {
 
     return (
         <div className='cart'>
@@ -15,6 +15,13 @@ const Cart = ({ cart, handleClearToCart, handleChooseOne }) => {
                     </div>
                 )
                 )
+            }
+            {
+                choose.map((thing) => (
+                    <div>
+                        {thing}
+                    </div>
+                ))
             }
             <div className='btn-part'>
                 <button onClick={handleChooseOne} className='choose-btn'>CHOOSE 1 FOR ME</button> <br />

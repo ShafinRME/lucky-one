@@ -6,6 +6,7 @@ import './Shop.css'
 const Shop = () => {
     const [products, setProducts] = useState([]);
     const [cart, setCart] = useState([])
+    const [choose, setChoose] = useState([])
     useEffect(() => {
         fetch('products.json')
             .then(res => res.json())
@@ -20,14 +21,24 @@ const Shop = () => {
         // const newCart = [...cart, product];
         // setCart(newCart);
     }
+    const handleChooseOne = () => {
+        let newItem = [];
+        newItem.push(cart);
+        console.log(newItem)
+        const pin = Math.round(Math.random() * 12);
+        let newCart2 = [];
+        newCart2.push(newItem[pin]);
+        setChoose(newCart2);
+        console.log(choose);
+
+    }
 
     const handleClearToCart = () => {
         const newCart2 = [];
         setCart(newCart2);
     }
-    const handleChooseOne = (product) = {
-        setCart([...cart, { ...product }]);
-    }
+
+
 
     return (
         <div className='shop-container'>
@@ -44,6 +55,7 @@ const Shop = () => {
             <div className="cart-container">
                 <Cart
                     cart={cart}
+                    choose={choose}
                     handleClearToCart={handleClearToCart}
                     handleChooseOne={handleChooseOne}
                 ></Cart>
