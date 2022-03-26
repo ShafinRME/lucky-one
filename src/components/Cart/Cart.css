@@ -1,4 +1,34 @@
 .cart{
     position: sticky;
     top: 0;
+    margin-left: 20px;
+    color: white;
+}
+.btn-part{
+    margin-top: 400px;
+}
+.choose-btn{
+    border: 2px solid green;
+    width: 250px;
+    height: 50px;
+    font-size: 20px;
+    margin-bottom: 20px;
+    background-color: mediumpurple;
+    color: rgb(19, 18, 17);
+}
+.choose-btn:hover{
+    background-color: green;
+    color: white;
+}
+.clear-btn{
+    border: 2px solid green;
+    width: 250px;
+    height: 50px;
+    font-size: 20px;
+    margin-bottom: 20px;
+    background-color: mediumpurple;
+    color: white;
+}
+.clear-btn:hover{
+    background-color: black;
 }
