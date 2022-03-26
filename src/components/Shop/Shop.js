@@ -35,6 +35,7 @@ const Shop = () => {
     const handleClearToCart = () => {
         const newCart2 = [];
         setCart(newCart2);
+        setChese(newCart2)
     }
 
 
