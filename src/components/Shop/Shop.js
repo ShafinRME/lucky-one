@@ -13,13 +13,20 @@ const Shop = () => {
     }, []);
 
     const handleAddToCart = (product) => {
-        const newCart = [...cart, product];
-        setCart(newCart);
+        const exist = cart.find(citem => citem.id === product.id);
+        if (!exist) {
+            setCart([...cart, { ...product }])
+        }
+        // const newCart = [...cart, product];
+        // setCart(newCart);
     }
 
     const handleClearToCart = () => {
         const newCart2 = [];
         setCart(newCart2);
+    }
+    const handleChooseOne = (product) = {
+        setCart([...cart, { ...product }]);
     }
 
     return (
@@ -38,6 +45,7 @@ const Shop = () => {
                 <Cart
                     cart={cart}
                     handleClearToCart={handleClearToCart}
+                    handleChooseOne={handleChooseOne}
                 ></Cart>
             </div>
         </div >

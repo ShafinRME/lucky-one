@@ -4,6 +4,8 @@
     gap: 20px;
     border: 5px dotted green;
     border-radius: 45px 0px 45px 0px;
+    margin-bottom: 20px;
+    margin: 10px;
 }
 .question-1{
     color: wheat;
@@ -32,6 +34,8 @@
     font-weight: 500;
     border: 5px dotted green;
     border-radius: 45px 0px 45px 0px;
+    margin-bottom: 20px;
+    margin: 10px;
 }
 .answer-text{
     margin-left: 20px;

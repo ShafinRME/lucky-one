@@ -1,19 +1,23 @@
 import React from 'react';
 import './Cart.css'
 
-const Cart = ({ cart, handleClearToCart }) => {
-
-    let name = '';
-    for (const product of cart) {
-        name = product.name;
-    }
+const Cart = ({ cart, handleClearToCart, handleChooseOne }) => {
 
     return (
         <div className='cart'>
             <h1>Selected Phones</h1>
-            <h3>{name}</h3>
+            {
+                cart.map((item) => (
+                    <div key={item.id}>
+                        <div>
+                            {item.name}
+                        </div>
+                    </div>
+                )
+                )
+            }
             <div className='btn-part'>
-                <button className='choose-btn'>CHOOSE 1 FOR ME</button> <br />
+                <button onClick={handleChooseOne} className='choose-btn'>CHOOSE 1 FOR ME</button> <br />
                 <button onClick={handleClearToCart} className='clear-btn'>CHOOSE AGAIN</button>
             </div>
         </div>
