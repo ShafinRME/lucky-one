@@ -6,31 +6,30 @@ import './Shop.css'
 const Shop = () => {
     const [products, setProducts] = useState([]);
     const [cart, setCart] = useState([])
-    const [choose, setChoose] = useState([])
+    const [chese, setChese] = useState([])
+
     useEffect(() => {
         fetch('products.json')
             .then(res => res.json())
             .then(data => setProducts(data))
     }, []);
 
+    const handleChooseOne = () => {
+        let choose = [];
+        let pin = Math.round(Math.random() * cart.length);
+        setChese(choose.push(cart[pin]));
+
+    }
+
     const handleAddToCart = (product) => {
         const exist = cart.find(citem => citem.id === product.id);
         if (!exist) {
-            setCart([...cart, { ...product }])
+            if (cart.length < 4) {
+                setCart([...cart, { ...product }])
+            }
         }
         // const newCart = [...cart, product];
         // setCart(newCart);
-    }
-    const handleChooseOne = () => {
-        let newItem = [];
-        newItem.push(cart);
-        console.log(newItem)
-        const pin = Math.round(Math.random() * 12);
-        let newCart2 = [];
-        newCart2.push(newItem[pin]);
-        setChoose(newCart2);
-        console.log(choose);
-
     }
 
     const handleClearToCart = () => {
@@ -55,9 +54,9 @@ const Shop = () => {
             <div className="cart-container">
                 <Cart
                     cart={cart}
-                    choose={choose}
                     handleClearToCart={handleClearToCart}
                     handleChooseOne={handleChooseOne}
+                    chese={chese}
                 ></Cart>
             </div>
         </div >
